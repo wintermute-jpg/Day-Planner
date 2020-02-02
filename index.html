@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day Planner</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="jumbotron">
+                    <h1>Day Planner</h1>
+                    <div id="date"></div>
+                    <p>Have a blessed day</p>
+                </div>
+            </header>
+            <br>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Time</th>
+                    <th>Events</th>
+                    <th>Save</th>
+                </tr>
+                    
+                <tr>
+                    <td>10AM</td>
+
+                    <td> <Textarea class="form-control z-depth-1" rows="3" placeholder="What have you got going on today?" id="textarea"></Textarea>
+                    </td>
+                    
+                    <td><button class="save" onclick="save()">Save</button></td>
+                </tr>
+
+            </table>
+        </div>
+
+    </body>
+
+
+
+<script src="script.js"> </script>
+
+
+</html>
