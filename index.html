@@ -28,13 +28,21 @@
                     <th>Save</th>
                 </tr>
                     
-                <tr>
-                    <td>10AM</td>
+                <tr id="10">
+                    <td class="time">10AM</td>
 
-                    <td> <Textarea class="form-control z-depth-1" rows="3" placeholder="What have you got going on today?" id="textarea"></Textarea>
+                    <td> <Textarea class="form-control z-depth-1" rows="3" placeholder="What have you got going on today?" id="textarea10"></Textarea>
                     </td>
-                    
-                    <td><button class="save" onclick="save()">Save</button></td>
+
+                    <td><button class="save" onclick="save($(this))" id="10"> Save</button></td>
+                </tr>
+                <tr>
+                    <td>11AM</td>
+
+                    <td> <Textarea class="form-control z-depth-1" rows="3" placeholder="What have you got going on today?" id="textarea11"></Textarea>
+                    </td>
+
+                    <td><button class="save" onclick="save($(this))" id="11"> Save</button></td>
                 </tr>
 
             </table>
