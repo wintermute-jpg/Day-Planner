@@ -1,58 +1,133 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+
         <title>Day Planner</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
         <link href="style.css" rel="stylesheet">
-
     </head>
-
+    
     <body>
         <div class="container">
-            <header>
-                <div class="jumbotron">
+            <header class="jumbotron text-center">
                     <h1>Day Planner</h1>
-                    <div id="date"></div>
+                    <h3 id="date"><h3>
                     <p>Have a blessed day</p>
-                </div>
             </header>
             <br>
-            <table class="table table-bordered">
-                <tr>
-                    <th>Time</th>
-                    <th>Events</th>
-                    <th>Save</th>
-                </tr>
+            <div class="container text-center">
+                <div class="row titleContainer">
+                    <div class="col-md-1 ">
+                        Time
+                    </div>
+                    <div class="col-md-10 ">
+                        Events
+                    </div>
+                    <div class="col-md-1 ">
+                        Save
+                    </div>
+                </div>
+                <div id="hour-9" class="row">
+                    <div class="col-md-1 time">
+                        9AM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div>
+                <div id="hour-10" class="row">
+                    <div class="col-md-1 time">
+                        10AM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div>
+
+                <div id="hour-11" class="row">
+                    <div class="col-md-1 time">
+                        11AM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div>
+
+                <div id="hour-12" class="row">
+                    <div class="col-md-1 time">
+                        12PM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div>
+                <div id="hour-1" class="row">
+                    <div class="col-md-1 time">
+                        1PM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div>
+                <div id="hour-2" class="row">
+                    <div class="col-md-1 time">
+                        2PM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div>
+                <div id="hour-3" class="row">
+                    <div class="col-md-1 time">
+                        3PM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div>
+                <div id="hour-4" class="row">
+                    <div class="col-md-1 time">
+                        4PM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div><div id="hour-5" class="row">
+                    <div class="col-md-1 time">
+                        5PM
+                    </div>
+                    <Textarea class="col-md-10 form-control tasks" rows="3" placeholder="What have you got going on today?">
+                        </Textarea>
+                    <button class="btn saveBtn btn-primary col-md-1 save">
+                        save
+                    </button>
+                </div>
+
+            </div>
                     
-                <tr id="10">
-                    <td class="time">10AM</td>
-
-                    <td> <Textarea class="form-control z-depth-1" rows="3" placeholder="What have you got going on today?" id="textarea10"></Textarea>
-                    </td>
-
-                    <td><button class="save" onclick="save($(this))" id="10"> Save</button></td>
-                </tr>
-                <tr>
-                    <td>11AM</td>
-
-                    <td> <Textarea class="form-control z-depth-1" rows="3" placeholder="What have you got going on today?" id="textarea11"></Textarea>
-                    </td>
-
-                    <td><button class="save" onclick="save($(this))" id="11"> Save</button></td>
-                </tr>
-
-            </table>
         </div>
-
-    </body>
-
-
-
-<script src="script.js"> </script>
-
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="script.js"> </script>
+    </body
 
 </html>
